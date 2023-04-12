@@ -11,81 +11,34 @@
     <!--ICONSCOUT-->
 
     <!--STYLE-->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--STYLE-->
 
-    <title>Tela GOV</title>
+    <title>Iframe FGTS</title>
 </head>
 
 <body>
 
     <div class="container">
 
-
         <div class="topBar">
 
-            <div class="contentUser">
-
-                <img src="./img/iconDefautlt.jpg" alt="">
-
-                <span>Breno</span>
+            <div onclick="voltar()" class="contentArrow">
+                <i class="uil uil-arrow-right"></i>
             </div>
-
-            <div class="contentInfo">
-                <i class="uil uil-bell"></i>
-            </div>
-
 
         </div>
-        
-        <div>
-            
-            <div class="icon-GOV">
-
-                <img src="/img/GOV.png" alt="Ícone GOV" class="iconGOV">
-
-            </div>
-
-            <div class="icons">
-
-                <section class="gridIcons">
-
-                    <a href="/iframe/clt.html"><img src="/img/CLT.png" alt="Ícone CLT" class="icon"></a>
-                    <strong>CLT</strong>
-                     
-                </section>
-
-                <section class="gridIcons">
-
-                    <a href="/iframe/inss.html"><img src="/img/INSS.png" alt="Ícone INSS" class="icon"></a>
-                    <strong>INSS</strong>
-
-                </section>
-
-            </div>
-
-            <div class="icons">
-
-                <section class="gridIcons">
-
-                    <a href="/iframe/sus.html"><img src="/img/SUS.png" alt="Ícone SUS" class="icon"></a>
-                    <strong>CONECTE SUS</strong>
-                     
-                </section>
-
-                <section class="gridIcons">
-
-                    <a href="/iframe/fgts.html"><img src="/img/FGTS.png" alt="Ícone FGTS" class="icon"></a>
-                    <strong>FGTS</strong>
-
-                </section>
-
-            </div>         
-
-        </div>
-
 
     </div>
+
+
+
+    <div>
+
+        <iframe src="https://www.fgts.gov.br/Pages/default.aspx" width="388" height="630"></iframe>
+
+    </div>
+
 
 
     <div class="bottomBar">
@@ -139,6 +92,14 @@
         </nav>
 
     </div>
+
+
+    <script>
+        function voltar() {
+          window.location.href = "../index.html";
+        }
+      </script>
+
 
 </body>
 
